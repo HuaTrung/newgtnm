@@ -47,8 +47,6 @@
 
 <body ng-app="myApp" ng-controller="myController">
     <div class="wrapper">
-        <!-- Main content -->
-
 
         <!-- Header section -->
         <header class="header-wrapper header-wrapper--home">
@@ -57,23 +55,24 @@
                 <a href='index.html' class="logo">
                     <img alt='logo' src="images/logo.png">
                 </a>
-
+                
                 <!-- Main website navigation-->
                 <nav id="navigation-box">
                     <!-- Toggle for mobile menu mode -->
-                    <a id="navigation-toggle">
+                    <a href="#" id="navigation-toggle">
                         <span class="menu-icon">
                             <span class="icon-toggle" role="button" aria-label="Toggle Navigation">
-                                <span class="lines"></span>
+                              <span class="lines"></span>
                             </span>
                         </span>
                     </a>
-
+                    
                     <!-- Link navigation -->
                     <ul id="navigation">
+                       
                         <li>
                             <span class="sub-nav-toggle plus"></span>
-                            <a href="page-elements.html">Booking steps</a>
+                            <a href="book1.html">Booking steps</a>
                             <ul>
                                 <li class="menu__nav-item"><a href="book1.html">Booking step 1</a></li>
                                 <li class="menu__nav-item"><a href="book2.html">Booking step 2</a></li>
@@ -86,35 +85,34 @@
                             <span class="sub-nav-toggle plus"></span>
                             <a href="gallery-four.html">Gallery</a>
                             <ul>
-                                <li class="menu__nav-item"><a href="gallery-four.html">4 col gallery</a></li>
-                                <li class="menu__nav-item"><a href="gallery-three.html">3 col gallery</a></li>
-                                <li class="menu__nav-item"><a href="gallery-two.html">2 col gallery</a></li>
+                                <li class="menu__nav-item"><a href="#">4 col gallery</a></li>
+                                <li class="menu__nav-item"><a href="#">3 col gallery</a></li>
+                                <li class="menu__nav-item"><a href="#">2 col gallery</a></li>
                             </ul>
                         </li>
                         <li>
                             <span class="sub-nav-toggle plus"></span>
                             <a href="news-left.html">News</a>
                             <ul>
-                                <li class="menu__nav-item"><a>News</a></li>
-                                <li class="menu__nav-item"><a>News</a></li>
-                                <li class="menu__nav-item"><a>News</a></li>
-                               
+                                <li class="menu__nav-item"><a href="#">News (rigth sidebar)</a></li>
+                                <li class="menu__nav-item"><a href="#">News (left sidebar)</a></li>
+                                <li class="menu__nav-item"><a href="#">News (full widht)</a></li>
                             </ul>
                         </li>
+                        
                     </ul>
                 </nav>
-
+                
                 <!-- Additional header buttons / Auth and direct link to booking-->
                 <div class="control-panel">
                     <div class="auth auth--home">
-                        <div class="auth__show">
-                            <span class="auth__image">
-                                <img alt="" src="http://placehold.it/31x31">
-                            </span>
-                        </div>
-                        <a href="#" class="btn btn--sign btn--singin">
-                            me
-                        </a>
+                      <div class="auth__show">
+                        <span class="auth__image">
+                        </span>
+                      </div>
+                      <a href="#" class="btn btn--sign btn--singin">
+                          me
+                      </a>
                         <ul class="auth__function">
                             <li><a href="#" class="auth__function-item">Watchlist</a></li>
                             <li><a href="#" class="auth__function-item">Booked tickets</a></li>
@@ -123,115 +121,404 @@
                         </ul>
 
                     </div>
-                    <a href="#" class="btn btn-md btn--warning btn--book btn-control--home login-window">Book a ticket</a>
+                    <a href="book1.html" class="btn btn-md btn--warning btn--book ">Book a ticket</a>
                 </div>
 
             </div>
         </header>
 
+        <!-- Slider -->
+            <div class="bannercontainer">
+                    <div class="banner">
+                        <ul>
 
-        <!-- Main content -->
-        <section class="container">
-            <div class="movie-best">
-                <div class="col-sm-10 col-sm-offset-1 movie-best__rating">Today Best choice</div>
-                <div class="col-sm-12 change--col">
-                    <div class="movie-beta__item ">
-                        <img alt='' src="http://placehold.it/380x600">
-                        <span class="best-rate">5.0</span>
+                            <li data-transition="fade" data-slotamount="7" class="slide" data-slide='Rush.'>
+                                <img alt='' src="images/bannerr.png">
+                                <div class="caption slide__name margin-slider" 
+                                     data-x="right" 
+                                     data-y="80" 
 
-                        <ul class="movie-beta__info">
-                            <li><span class="best-voted">71 people voted today</span></li>
-                            <li>
-                                <p class="movie__time">169 min</p>
-                                <p>Adventure | Drama | Fantasy </p>
-                                <p>38 comments</p>
-                            </li>
-                            <li class="last-block">
-                                <a href="#" class="slide__link">more</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="movie-beta__item second--item">
-                        <img alt='' src="http://placehold.it/380x600">
-                        <span class="best-rate">5.0</span>
+                                     data-splitin="chars"
+                                     data-elementdelay="0.1"
 
-                        <ul class="movie-beta__info">
-                            <li><span class="best-voted">71 people voted today</span></li>
-                            <li>
-                                <p class="movie__time">169 min</p>
-                                <p>Adventure | Drama | Fantasy </p>
-                                <p>38 comments</p>
-                            </li>
-                            <li class="last-block">
-                                <a href="#" class="slide__link">more</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="movie-beta__item third--item">
-                        <img alt='' src="http://placehold.it/380x600">
-                        <span class="best-rate">5.0</span>
+                                     data-speed="700" 
+                                     data-start="1400" 
+                                     data-easing="easeOutBack"
 
-                        <ul class="movie-beta__info">
-                            <li><span class="best-voted">71 people voted today</span></li>
-                            <li>
-                                <p class="movie__time">169 min</p>
-                                <p>Adventure | Drama | Fantasy </p>
-                                <p>38 comments</p>
-                            </li>
-                            <li class="last-block">
-                                <a href="#" class="slide__link">more</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="movie-beta__item hidden-xs">
-                        <img alt='' src="http://placehold.it/380x600">
-                        <span class="best-rate">5.0</span>
+                                     data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:0;transformOrigin:50% 50%;"
 
-                        <ul class="movie-beta__info">
-                            <li><span class="best-voted">71 people voted today</span></li>
-                            <li>
-                                <p class="movie__time">169 min</p>
-                                <p>Adventure | Drama | Fantasy </p>
-                                <p>38 comments</p>
-                            </li>
-                            <li class="last-block">
-                                <a href="#" class="slide__link">more</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="movie-beta__item hidden-xs hidden-sm">
-                        <img alt='' src="http://placehold.it/380x600">
-                        <span class="best-rate">5.0</span>
+                                    data-frames="{ typ :lines;
+                                                 elementdelay :0.1;
+                                                 start:1650;
+                                                 speed:500;
+                                                 ease:Power3.easeOut;
+                                                 animation:x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:1;transformPerspective:600;transformOrigin:50% 50%;
+                                                 },
+                                                 { typ :lines;
+                                                 elementdelay :0.1;
+                                                 start:2150;
+                                                 speed:500;
+                                                 ease:Power3.easeOut;
+                                                 animation:x:0;y:0;z:0;rotationX:00;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:1;transformPerspective:600;transformOrigin:50% 50%;
+                                                 }
+                                                 "
 
-                        <ul class="movie-beta__info">
-                            <li><span class="best-voted">71 people voted today</span></li>
-                            <li>
-                                <p class="movie__time">169 min</p>
-                                <p>Adventure | Drama | Fantasy </p>
-                                <p>38 comments</p>
-                            </li>
-                            <li class="last-block">
-                                <a href="#" class="slide__link">more</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="movie-beta__item hidden-xs hidden-sm">
-                        <img alt='' src="http://placehold.it/380x600">
-                        <span class="best-rate">5.0</span>
 
-                        <ul class="movie-beta__info">
-                            <li><span class="best-voted">71 people voted today</span></li>
-                            <li>
-                                <p class="movie__time">169 min</p>
-                                <p>Adventure | Drama | Fantasy </p>
-                                <p>38 comments</p>
+                                    data-splitout="lines"
+                                    data-endelementdelay="0.1"
+                                    data-customout="x:-230;y:0;z:0;rotationX:0;rotationY:0;rotationZ:90;scaleX:0.2;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%"
+
+                                    data-endspeed="500"
+                                    data-end="8400"
+                                    data-endeasing="Back.easeIn"
+                                     >
+                                    RUSH
+                                </div>
+
+                                <div class="caption slide__time margin-slider sfr str" 
+                                     data-x="right" 
+                                     data-hoffset='-243' 
+                                     data-y="186" 
+                                     data-speed="300" 
+                                     data-start="2100" 
+                                     data-easing="easeOutBack"
+                                     data-endspeed="300"
+                                     data-end="8700"
+                                     data-endeasing="Back.easeIn"
+                                     >
+                                     From
+                                 </div>
+                                <div class="caption slide__date margin-slider lfb ltb" 
+                                     data-x="right" 
+                                     data-hoffset='-149' 
+                                     data-y="186" 
+                                     data-speed="500" 
+                                     data-start="2400" 
+                                     data-easing="Power4.easeOut"
+                                     data-endspeed="400"
+                                     data-end="8200"
+                                     data-endeasing="Back.easeIn"
+                                     >
+                                     October 18
+                                 </div>
+                                <div class="caption slide__time margin-slider sfr str" 
+                                     data-x="right" 
+                                     data-hoffset='-113' 
+                                     data-y="186" 
+                                     data-speed="300" 
+                                     data-start="2100" 
+                                     data-easing="easeOutBack"
+                                     data-endspeed="300"
+                                     data-end="8700"
+                                     data-endeasing="Back.easeIn"
+                                     >
+                                     - till
+                                 </div>
+                                <div class="caption slide__date margin-slider lfb ltb" 
+                                     data-x="right" 
+                                     data-y="186" 
+                                     data-speed="500" 
+                                     data-start="2800" 
+                                     data-easing="Power4.easeOut"
+                                     data-endspeed="400"
+                                     data-end="8200"
+                                     data-endeasing="Back.easeIn"
+                                     >
+                                     November 01
+                                 </div>
+                                <div class="caption slide__text margin-slider customin customout" 
+                                     data-x="right" 
+                                     data-y="250"
+                                     data-customin="x:0;y:100;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:3;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:0% 0%;"
+                                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
+                                     data-speed="400" 
+                                     data-start="3000"
+                                     data-endspeed="400"
+                                     data-end="8000"
+                                     data-endeasing="Back.easeIn">
+                                     Two-time Academy Award winner Ron Howard, teams once again with fellow two-time Academy<br> Award nominee, writer Peter Morgan , on Rush, a spectacular big-screen re-creation of the merciless<br> 1970s rivalry between James Hunt and Niki Lauda.
+                                 </div>
+                                <div class="caption margin-slider skewfromright customout " 
+                                     data-x="right" 
+                                     data-y="324"
+                                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                     data-speed="400" 
+                                     data-start="3300"
+                                     data-easing="Power4.easeOut"
+                                     data-endspeed="300"
+                                     data-end="7700"
+                                     data-endeasing="Power4.easeOut">
+                                     <a href="#" class="slide__link">check out cinemas &amp; time</a>
+                                 </div>
                             </li>
-                            <li class="last-block">
-                                <a href="#" class="slide__link">more</a>
+
+                            <li data-transition="fade" data-slotamount="7" class="slide fading-slide" data-slide='Travel worldwide.
+Create trip film.'>
+                                <img alt='' src="images/logo2.jpg">
+                                 <div class="caption slide__video" data-x="0" data-y="0" data-autoplay='true'>
+                                   <video class="media-element"  autoplay="autoplay" preload='none' loop="loop" muted="" src="video/53170154.mp4" >
+                                        <source type="video/webm" src="video/53170154.webm">
+                                        <source type="video/mp4" src="video/53170154.mp4">
+                                        <source type="video/ogg" src="video/53170154.ogv">
+                                    </video>
+                                </div>
+
+                                 <div class="caption slide__name slide__name--smaller" 
+                                     data-x="left" 
+                                     data-y="160" 
+
+                                     data-splitin="chars"
+                                     data-elementdelay="0.1"
+
+                                     data-speed="700" 
+                                     data-start="1400" 
+                                     data-easing="easeOutBack"
+
+                                     data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:0;transformOrigin:50% 50%;"
+
+                                    data-frames="{ typ :lines;
+                                                 elementdelay :0.1;
+                                                 start:1650;
+                                                 speed:500;
+                                                 ease:Power3.easeOut;
+                                                 animation:x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:1;transformPerspective:600;transformOrigin:50% 50%;
+                                                 },
+                                                 { typ :lines;
+                                                 elementdelay :0.1;
+                                                 start:2150;
+                                                 speed:500;
+                                                 ease:Power3.easeOut;
+                                                 animation:x:0;y:0;z:0;rotationX:00;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:1;transformPerspective:600;transformOrigin:50% 50%;
+                                                 }
+                                                 "
+
+
+                                    data-splitout="lines"
+                                    data-endelementdelay="0.1"
+                                    data-customout="x:-230;y:0;z:0;rotationX:0;rotationY:0;rotationZ:90;scaleX:0.2;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%"
+                                    data-endspeed="500"
+                                   
+                                    data-endeasing="Back.easeIn"
+                                     >
+                                    Travel, Admire, Remember.
+                                </div>
+
+                                <div class="caption slide__time position-center postion-place--one sfr stl" 
+                                     data-x="left" 
+                                      
+                                     data-y="242" 
+                                     data-speed="300" 
+                                     data-start="2100" 
+                                     data-easing="easeOutBack"
+                                     data-endspeed="300"
+                                     
+                                     data-endeasing="Back.easeIn">
+                                     From
+                                 </div>
+                                <div class="caption slide__date position-center postion-place--two lfb ltb" 
+                                     data-x="left"                                       
+                                     data-y="242" 
+                                     data-speed="500" 
+                                     data-start="2400" 
+                                     data-easing="Power4.easeOut"
+                                     data-endspeed="400"
+                                     
+                                     data-endeasing="Back.easeIn">
+                                     April 18 
+                                 </div>
+                                <div class="caption slide__time position-center postion-place--three sfr stl" 
+                                     data-x="left" 
+                                     data-y="242" 
+                                     data-speed="300" 
+                                     data-start="2100" 
+                                     data-easing="easeOutBack"
+                                     data-endspeed="300"
+                                     
+                                     data-endeasing="Back.easeIn">
+                                     - till
+                                 </div>
+                                <div class="caption slide__date position-center postion-place--four lfb ltb" 
+                                     data-x="left"
+                                     data-y="242" 
+                                     data-speed="500" 
+                                     data-start="2800" 
+                                     data-easing="Power4.easeOut" 
+                                     data-endspeed="400"
+                                     
+                                     data-endeasing="Back.easeIn">
+                                     May 01
+                                 </div>
+
+                                 <div class="caption lfb slider-wrap-btn ltb" 
+                                     data-x="left"
+                                     data-y="310" 
+                                     data-speed="400" 
+                                     data-start="3300" 
+                                     data-easing="Power4.easeOut"
+                                     data-endspeed="500"
+                                     
+                                     data-endeasing="Power4.easeOut" >
+                                     <a href="#" class="btn btn-md btn--danger btn--wide slider--btn">learn more</a>
+                                 </div>
                             </li>
+
+                            <li data-transition="fade" data-slotamount="7" class="slide" data-slide='Stop wishing. 
+Start doing.'>
+                                <img alt='' src="images/logo2.jpg">
+                                 <div class="caption slide__name slide__name--smaller slide__name--specific customin customout" 
+                                     data-x="left" 
+                                     data-y="160" 
+
+                                     data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+
+                                     data-speed="700" 
+                                     data-start="1400" 
+                                     data-easing="easeOutBack"
+                                     data-endspeed="500"
+                                     data-end="8600"
+                                     data-endeasing="Back.easeIn"
+
+                                     >
+                                    Stop <span class="highlight">wishing.</span> Start <span class="highlight">doing.</span> 
+                                </div>
+
+                                  <div class="caption slide__descript customin customout" 
+                                     data-x="left" 
+                                     data-y="240"
+                                     data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
+                                     data-speed="700" 
+                                     data-start="2000"
+                                     data-endspeed="500"
+                                     data-end="8400"
+                                     data-endeasing="Back.easeIn">
+                                     find your best match movie with CLOVER CINEMA
+                                 </div>
+
+                                 <div class="caption lfb customout slider-wrap-btn" 
+                                     data-x="left" 
+                                     data-y="310" 
+                                     data-speed="500" 
+                                     data-start="2800" 
+                                     data-easing="Power4.easeOut"
+                                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
+                                     data-endspeed="400"
+                                     data-end="8000"
+                                     data-endeasing="Power4.easeOut" >
+                                     <a href="#" class="btn btn-md btn--danger slider--btn">check out movies</a>
+                                 </div>
+                            </li>
+
                         </ul>
                     </div>
                 </div>
+
+        <!--end slider -->
+        
+        
+        <!-- Main content -->
+        <section class="container">
+            <div class="movie-best">
+                 <div class="col-sm-10 col-sm-offset-1 movie-best__rating">Today Best choice</div>
+                 <div class="col-sm-12 change--col">
+                     <div class="movie-beta__item ">
+                        <img alt='' width="380" height="250" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6234/6234447_sa.jpg;maxHeight=640;maxWidth=550">
+                         <span class="best-rate">5.0</span>
+
+                         <ul class="movie-beta__info">
+                             <li><span class="best-voted">71 people voted today</span></li>
+                             <li>
+                                <p class="movie__time">169 min</p>
+                                <p>Adventure | Drama | Fantasy </p>
+                                <p>38 comments</p>
+                             </li>
+                             <li class="last-block">
+                                 <a href="#" class="slide__link">more</a>
+                             </li>
+                         </ul>
+                     </div>
+                     <div class="movie-beta__item second--item">
+                         <img alt='' width="380" height="250" src="https://m.media-amazon.com/images/M/MV5BOTk5ODg0OTU5M15BMl5BanBnXkFtZTgwMDQ3MDY3NjM@._V1_.jpg">
+                         <span class="best-rate">5.0</span>
+
+                         <ul class="movie-beta__info">
+                             <li><span class="best-voted">71 people voted today</span></li>
+                             <li>
+                                <p class="movie__time">169 min</p>
+                                <p>Adventure | Drama | Fantasy </p>
+                                <p>38 comments</p>
+                             </li>
+                             <li class="last-block">
+                                 <a href="#" class="slide__link">more</a>
+                             </li>
+                         </ul>
+                     </div>
+                     <div class="movie-beta__item third--item">
+                         <img alt='' width="380" height="250" src="https://static2.yan.vn/YanNews/2167221/201804/nayeon-duoc-menh-danh-la-tien-nu-mo-man-trong-moi-san-khau-cua-twice-18fe01a1.jpg">
+                         <span class="best-rate">5.0</span>
+
+                         <ul class="movie-beta__info">
+                             <li><span class="best-voted">71 people voted today</span></li>
+                             <li>
+                                <p class="movie__time">169 min</p>
+                                <p>Adventure | Drama | Fantasy </p>
+                                <p>38 comments</p>
+                             </li>
+                             <li class="last-block">
+                                 <a href="#" class="slide__link">more</a>
+                             </li>
+                         </ul>
+                     </div>
+                     <div class="movie-beta__item hidden-xs">
+                         <img alt='' width="380" height="250" src="https://is5-ssl.mzstatic.com/image/thumb/Video125/v4/85/b8/cf/85b8cf19-30f8-4b2d-c4e4-87eb52e2ba28/pr_source.lsr/268x0w.png">
+                         <span class="best-rate">5.0</span>
+
+                         <ul class="movie-beta__info">
+                             <li><span class="best-voted">71 people voted today</span></li>
+                             <li>
+                                <p class="movie__time">169 min</p>
+                                <p>Adventure | Drama | Fantasy </p>
+                                <p>38 comments</p>
+                             </li>
+                             <li class="last-block">
+                                 <a href="#" class="slide__link">more</a>
+                             </li>
+                         </ul>
+                     </div>
+                     <div class="movie-beta__item hidden-xs hidden-sm">
+                         <img alt='' width="380" height="250" src="http://image.phimmoi.net/film/6113/poster.medium.jpg">
+                         <span class="best-rate">5.0</span>
+
+                         <ul class="movie-beta__info">
+                             <li><span class="best-voted">71 people voted today</span></li>
+                             <li>
+                                <p class="movie__time">169 min</p>
+                                <p>Adventure | Drama | Fantasy </p>
+                                <p>38 comments</p>
+                             </li>
+                             <li class="last-block">
+                                 <a href="movie-page-left.html" class="slide__link">more</a>
+                             </li>
+                         </ul>
+                     </div>
+                     <div class="movie-beta__item hidden-xs hidden-sm">
+                         <img alt='' width="380" height="250" src="https://upload.wikimedia.org/wikipedia/en/thumb/1/18/Venom_%282018_film_poster%29.png/220px-Venom_%282018_film_poster%29.png">
+                         <span class="best-rate">5.0</span>
+
+                         <ul class="movie-beta__info">
+                             <li><span class="best-voted">71 people voted today</span></li>
+                             <li>
+                                <p class="movie__time">169 min</p>
+                                <p>Adventure | Drama | Fantasy </p>
+                                <p>38 comments</p>
+                             </li>
+                             <li class="last-block">
+                                 <a href="#" class="slide__link">more</a>
+                             </li>
+                         </ul>
+                     </div>
+                 </div>
                 <div class="col-sm-10 col-sm-offset-1 movie-best__check">check all movies now playing</div>
             </div>
 
@@ -263,36 +550,30 @@
                         </div>
                     </div>
 
-                    <div class="mega-select pull-right">
-                        <span class="mega-select__point">Search by</span>
-                        <ul class="mega-select__sort">
-                            <li class="filter-wrap"><a href="#" class="mega-select__filter filter--active" data-filter='location'>Location</a></li>
-                            <li class="filter-wrap"><a href="#" class="mega-select__filter" data-filter='cinema'>Cinema</a></li>
-                            <li class="filter-wrap"><a href="#" class="mega-select__filter" data-filter='film-category'>Category</a></li>
-                            <li class="filter-wrap"><a href="#" class="mega-select__filter" data-filter='actors'>Actors</a></li>
-                            <li class="filter-wrap"><a href="#" class="mega-select__filter" data-filter='director'>Director</a></li>
-                            <li class="filter-wrap"><a href="#" class="mega-select__filter" data-filter='country'>Country</a></li>
-                        </ul>
+                      <div class="mega-select pull-right">
+                          <span class="mega-select__point">Search by</span>
+                          <ul class="mega-select__sort">
+                              <li class="filter-wrap"><a href="#" class="mega-select__filter filter--active" data-filter='location'>Location</a></li>
+                              <li class="filter-wrap"><a href="#" class="mega-select__filter" data-filter='cinema'>Cinema</a></li>
+                              <li class="filter-wrap"><a href="#" class="mega-select__filter" data-filter='film-category'>Category</a></li>
+                              <li class="filter-wrap"><a href="#" class="mega-select__filter" data-filter='actors'>Actors</a></li>
+                              <li class="filter-wrap"><a href="#" class="mega-select__filter" data-filter='director'>Director</a></li>
+                              <li class="filter-wrap"><a href="#" class="mega-select__filter" data-filter='country'>Country</a></li>
+                          </ul>
 
-                        <input name="search-input" type='text' class="select__field">
+                          <input name="search-input" type='text' class="select__field">
+                          
+                          <div class="select__btn">
+                            <a href="#" class="btn btn-md btn--danger location">find <span class="hidden-exrtasm">your city</span></a>
+                            <a href="#" class="btn btn-md btn--danger cinema">find <span class="hidden-exrtasm">suitable cimema</span></a>
+                            <a href="#" class="btn btn-md btn--danger film-category">find <span class="hidden-exrtasm">best category</span></a>
+                            <a href="#" class="btn btn-md btn--danger actors">find <span class="hidden-exrtasm">talented actors</span></a>
+                            <a href="#" class="btn btn-md btn--danger director">find <span class="hidden-exrtasm">favorite director</span></a>
+                            <a href="#" class="btn btn-md btn--danger country">find <span class="hidden-exrtasm">produced country</span></a>
+                          </div>
 
-                        <div class="select__btn">
-                            <a href="#" class="btn btn-md btn--danger location">find <span class="hidden-exrtasm">your
-                                    city</span></a>
-                            <a href="#" class="btn btn-md btn--danger cinema">find <span class="hidden-exrtasm">suitable
-                                    cimema</span></a>
-                            <a href="#" class="btn btn-md btn--danger film-category">find <span class="hidden-exrtasm">best
-                                    category</span></a>
-                            <a href="#" class="btn btn-md btn--danger actors">find <span class="hidden-exrtasm">talented
-                                    actors</span></a>
-                            <a href="#" class="btn btn-md btn--danger director">find <span class="hidden-exrtasm">favorite
-                                    director</span></a>
-                            <a href="#" class="btn btn-md btn--danger country">find <span class="hidden-exrtasm">produced
-                                    country</span></a>
-                        </div>
-
-                        <div class="select__dropdowns">
-                            <ul class="select__group location">
+                          <div class="select__dropdowns">
+                              <ul class="select__group location">
                                 <li class="select__variant" data-value='London'>London</li>
                                 <li class="select__variant" data-value='New York'>New York</li>
                                 <li class="select__variant" data-value='Paris'>Paris</li>
@@ -300,26 +581,26 @@
                                 <li class="select__variant" data-value='Moscow'>Moscow</li>
                                 <li class="select__variant" data-value='Minsk'>Minsk</li>
                                 <li class="select__variant" data-value='Warsawa'>Warsawa</li>
-                            </ul>
+                              </ul>
 
-                            <ul class="select__group cinema">
+                              <ul class="select__group cinema">
                                 <li class="select__variant" data-value='Cineworld'>Cineworld</li>
                                 <li class="select__variant" data-value='Empire'>Empire</li>
                                 <li class="select__variant" data-value='Everyman'>Everyman</li>
                                 <li class="select__variant" data-value='Odeon'>Odeon</li>
                                 <li class="select__variant" data-value='Picturehouse'>Picturehouse</li>
-                            </ul>
+                              </ul>
 
-                            <ul class="select__group film-category">
+                              <ul class="select__group film-category">
                                 <li class="select__variant" data-value="Children's">Children's</li>
                                 <li class="select__variant" data-value='Comedy'>Comedy</li>
                                 <li class="select__variant" data-value='Drama'>Drama</li>
                                 <li class="select__variant" data-value='Fantasy'>Fantasy</li>
                                 <li class="select__variant" data-value='Horror'>Horror</li>
                                 <li class="select__variant" data-value='Thriller'>Thriller</li>
-                            </ul>
+                              </ul>
 
-                            <ul class="select__group actors">
+                              <ul class="select__group actors">
                                 <li class="select__variant" data-value='Leonardo DiCaprio'>Leonardo DiCaprio</li>
                                 <li class="select__variant" data-value='Johnny Depp'>Johnny Depp</li>
                                 <li class="select__variant" data-value='Jack Nicholson'>Jack Nicholson</li>
@@ -328,38 +609,39 @@
                                 <li class="select__variant" data-value='Jim Carrey'>Jim Carrey</li>
                                 <li class="select__variant" data-value='Adam Sandler'>Adam Sandler</li>
                                 <li class="select__variant" data-value='Ben Stiller'>Ben Stiller</li>
-                            </ul>
+                              </ul>
 
-                            <ul class="select__group director">
+                              <ul class="select__group director">
                                 <li class="select__variant" data-value='Steven Spielberg'>Steven Spielberg</li>
                                 <li class="select__variant" data-value='Martin Scorsese'>Martin Scorsese</li>
                                 <li class="select__variant" data-value='Guy Ritchie'>Guy Ritchie</li>
                                 <li class="select__variant" data-value='Christopher Nolan'>Christopher Nolan</li>
                                 <li class="select__variant" data-value='Tim Burton'>Tim Burton</li>
-                            </ul>
+                              </ul>
 
-                            <ul class="select__group country">
+                              <ul class="select__group country">
                                 <li class="select__variant" data-value='USA'>USA</li>
                                 <li class="select__variant" data-value='Germany'>Germany</li>
                                 <li class="select__variant" data-value='Australia'>Australia</li>
                                 <li class="select__variant" data-value='UK'>UK</li>
                                 <li class="select__variant" data-value='Japan'>Japan</li>
                                 <li class="select__variant" data-value='Serbia'>Serbia</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
             </div>
-
+            
             <div class="clearfix"></div>
 
             <h2 id='target' class="page-heading heading--outcontainer">Now in the cinema</h2>
+
             <div class="col-sm-12">
                 <div class="row">
                     <div class="col-sm-8 col-md-9">
                         <div ng-repeat="movie in movies">
                             <!-- Movie variant with time -->
-                            <div class="movie movie--test movie--test--dark movie--test--left">
+                            <div class="{{movie.class}}">
                                 <div class="movie__images" >
                                     <a href="{{movie.id}}" class="movie-beta__link">
                                         <img alt='' width="424px" height="300px" src="{{movie.imagePath}}">
@@ -381,38 +663,39 @@
                             </div>
                             <!-- Movie variant with time -->
                         </div>
+
                     </div>
+
                     <aside class="col-sm-4 col-md-3">
                         <div class="sitebar first-banner--left">
                             <div class="banner-wrap first-banner--left">
-                                <img alt='banner' src="http://placehold.it/500x500">
+                                <img alt='banner' src="https://www.khuyenmaivui.com/wp-content/uploads/2015/02/Lotte-Cinema-khuyen-mai-Tet-boc-tham-trung-ipad-mini-2-nhan-pnj-cap-ve-xem-phim-958x676.jpg">
                             </div>
 
-                            <div class="banner-wrap">
-                                <img alt='banner' src="http://placehold.it/500x500">
+                             <div class="banner-wrap">
+                                <img alt='banner' src="https://stc.shopiness.vn/deal/2018/04/04/a/f/5/5/1522826275607_540.png">
                             </div>
 
-                            <div class="banner-wrap banner-wrap--last">
-                                <img alt='banner' src="http://placehold.it/500x500">
+                             <div class="banner-wrap banner-wrap--last">
+                                <img alt='banner' src="https://galaxycine.vn/media/2018/10/25/300-x-450_1540451476614.jpg">
                             </div>
 
                             <div class="promo marginb-sm">
-                                <div class="promo__head">A.Movie app</div>
-                                <div class="promo__describe">for all smartphones<br> and tablets</div>
-                                <div class="promo__content">
-                                    <ul>
-                                        <li class="store-variant"><a href="#"><img alt='' src="images/apple-store.svg"></a></li>
-                                        <li class="store-variant"><a href="#"><img alt='' src="images/google-play.svg"></a></li>
-                                        <li class="store-variant"><a href="#"><img alt='' src="images/windows-store.svg"></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-
+                              <div class="promo__head">CLOVER CINEMA app</div>
+                              <div class="promo__describe">for all smartphones<br> and tablets</div>
+                              <div class="promo__content">
+                                  <ul>
+                                      <li class="store-variant"><a href="#"><img alt='' src="images/apple-store.svg"></a></li>
+                                      <li class="store-variant"><a href="#"><img alt='' src="images/google-play.svg"></a></li>
+                                      <li class="store-variant"><a href="#"><img alt='' src="images/windows-store.svg"></a></li>
+                                  </ul>
+                              </div>
+                          </div>
+    
                         </div>
                     </aside>
                 </div>
             </div>
-
 
             <div class="col-sm-12">
                 <h2 class="page-heading">Latest news</h2>
@@ -420,7 +703,7 @@
                 <div class="col-sm-4 similar-wrap col--remove">
                     <div class="post post--preview post--preview--wide">
                         <div class="post__image">
-                            <img alt='' src="http://placehold.it/270x330">
+                            <img alt='' width="270" height="170" src="https://pixel.nymag.com/imgs/daily/vulture/2017/11/01/01-thor-ragnarok.w700.h700.jpg">
                             <div class="social social--position social--hide">
                                 <span class="social__name">Share:</span>
                                 <a href='#' class="social__variant social--first fa fa-facebook"></a>
@@ -428,7 +711,7 @@
                                 <a href='#' class="social__variant social--third fa fa-vk"></a>
                             </div>
                         </div>
-                        <p class="post__date">22 October 2013 </p>
+                        <p class="post__date">22 October 2018 </p>
                         <a href="single-page-left.html" class="post__title">"Thor: The Dark World" - World Premiere</a>
                         <a href="single-page-left.html" class="btn read-more post--btn">read more</a>
                     </div>
@@ -436,7 +719,7 @@
                 <div class="col-sm-4 similar-wrap col--remove">
                     <div class="post post--preview post--preview--wide">
                         <div class="post__image">
-                            <img alt='' src="http://placehold.it/270x330">
+                            <img alt='' width="270" height="170" src="https://upload.wikimedia.org/wikipedia/commons/1/15/Minatozaki_Sana_in_a_showcase_on_October_30%2C_2017_%282%29.jpg">
                             <div class="social social--position social--hide">
                                 <span class="social__name">Share:</span>
                                 <a href='#' class="social__variant social--first fa fa-facebook"></a>
@@ -444,16 +727,15 @@
                                 <a href='#' class="social__variant social--third fa fa-vk"></a>
                             </div>
                         </div>
-                        <p class="post__date">22 October 2013 </p>
-                        <a href="single-page-left.html" class="post__title">30th Annual Night Of Stars Presented By The
-                            Fashion Group International</a>
+                        <p class="post__date">22 October 2018 </p>
+                        <a href="single-page-left.html" class="post__title">30th Annual Night Of Stars Presented By The Fashion Group International</a>
                         <a href="single-page-left.html" class="btn read-more post--btn">read more</a>
                     </div>
                 </div>
                 <div class="col-sm-4 similar-wrap col--remove">
                     <div class="post post--preview post--preview--wide">
                         <div class="post__image">
-                            <img alt='' src="http://placehold.it/270x330">
+                            <img width="270" height="170" alt='' src="http://cdn04.cdn.justjared.com/wp-content/uploads/2018/11/anne-hfa/anne-hathaway-shows-support-at-hollywood-film-awards-2018-02.jpg">
                             <div class="social social--position social--hide">
                                 <span class="social__name">Share:</span>
                                 <a href='#' class="social__variant social--first fa fa-facebook"></a>
@@ -461,15 +743,15 @@
                                 <a href='#' class="social__variant social--third fa fa-vk"></a>
                             </div>
                         </div>
-                        <p class="post__date">22 October 2013 </p>
-                        <a href="single-page-left.html" class="post__title">Hollywood Film Awards 2013</a>
-                        <a href="single-page-left.html" class="btn read-more post--btn">read more</a>
+                        <p class="post__date">22 October 2018 </p>
+                        <a href="#" class="post__title">Hollywood Film Awards 2018</a>
+                        <a href="#" class="btn read-more post--btn">read more</a>
                     </div>
                 </div>
             </div>
-
+                
         </section>
-
+        
         <div class="clearfix"></div>
 
         <footer class="footer-wrapper">
@@ -500,7 +782,7 @@
                 </div>
                 <div class="col-xs-12 col-md-6">
                     <div class="footer-info">
-                        <p class="heading-special--small">A.Movie<br><span class="title-edition">in the social media</span></p>
+                        <p class="heading-special--small">CLOVER CINEMA<br><span class="title-edition">in the social media</span></p>
 
                         <div class="social">
                             <a href='#' class="social__variant fa fa-facebook"></a>
@@ -510,64 +792,100 @@
                             <a href='#' class="social__variant fa fa-tumblr"></a>
                             <a href='#' class="social__variant fa fa-pinterest"></a>
                         </div>
-
+                        
                         <div class="clearfix"></div>
-                        <p class="copy">&copy; A.Movie, 2013. All rights reserved. Done by Olia Gozha</p>
+                        <p class="copy">&copy; Clover Movie, 2018. All rights reserved. Done by Gnurt</p>
                     </div>
                 </div>
             </section>
         </footer>
     </div>
 
-    <!-- JavaScript-->
-    <!-- jQuery 1.9.1-->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="assets/js/external/jquery-1.10.1.min.js"><\/script>')</script>
-    <!-- Migrate -->
-    <script src="assets/js/external/jquery-migrate-1.2.1.min.js"></script>
-    <!-- Bootstrap 3-->
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+    <!-- open/close -->
+        <div class="overlay overlay-hugeinc">
+            
+            <section class="container">
 
-    <!-- jQuery REVOLUTION Slider -->
-    <script type="text/javascript" src="assets/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
-    <script type="text/javascript" src="assets/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+                <div class="col-sm-4 col-sm-offset-4">
+                    <button type="button" class="overlay-close">Close</button>
+                    <form id="login-form" class="login" method='get' novalidate=''>
+                        <p class="login__title">sign in <br><span class="login-edition">welcome to Clover Movie</span></p>
 
-    <!-- Mobile menu -->
-    <script src="assets/js/jquery.mobile.menu.js"></script>
-    <!-- Select -->
-    <script src="assets/js/external/jquery.selectbox-0.2.min.js"></script>
-    <!-- Stars rate -->
-    <script src="assets/js/external/jquery.raty.js"></script>
+                        <div class="social social--colored">
+                                <a href='#' class="social__variant fa fa-facebook"></a>
+                                <a href='#' class="social__variant fa fa-twitter"></a>
+                                <a href='#' class="social__variant fa fa-tumblr"></a>
+                        </div>
 
-    <!-- Form element -->
-    <script src="assets/js/external/form-element.js"></script>
-    <!-- Form validation -->
-    <script src="assets/js/form.js"></script>
+                        <p class="login__tracker">or</p>
+                        
+                        <div class="field-wrap">
+                        <input type='email' placeholder='Email' name='user-email' class="login__input">
+                        <input type='password' placeholder='Password' name='user-password' class="login__input">
 
-    <!-- Twitter feed -->
-    <script src="assets/js/external/twitterfeed.js"></script>
+                        <input type='checkbox' id='#informed' class='login__check styled'>
+                        <label for='#informed' class='login__check-info'>remember me</label>
+                         </div>
+                        
+                        <div class="login__control">
+                            <button type='submit' class="btn btn-md btn--warning btn--wider">sign in</button>
+                            <a href="#" class="login__tracker form__tracker">Forgot password?</a>
+                        </div>
+                    </form>
+                </div>
 
-    <!-- Custom -->
-    <script src="assets/js/custom.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            init_Home();
+            </section>
+        </div>
+
+	<!-- JavaScript-->
+        <!-- jQuery 1.9.1--> 
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/external/jquery-1.10.1.min.js"><\/script>')</script>
+        <!-- Migrate --> 
+        <script src="js/external/jquery-migrate-1.2.1.min.js"></script>
+        <!-- Bootstrap 3--> 
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+
+        <!-- jQuery REVOLUTION Slider -->
+        <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+        <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+        <!-- Mobile menu -->
+        <script src="js/jquery.mobile.menu.js"></script>
+         <!-- Select -->
+        <script src="js/external/jquery.selectbox-0.2.min.js"></script>
+        <!-- Stars rate -->
+        <script src="js/external/jquery.raty.js"></script>
+        
+        <!-- Form element -->
+        <script src="js/external/form-element.js"></script>
+        <!-- Form validation -->
+        <script src="js/form.js"></script>
+
+        <!-- Twitter feed -->
+        <script src="js/external/twitterfeed.js"></script>
+
+        <!-- Custom -->
+        <script src="js/custom.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+
+	      <script type="text/javascript">
+              $(document).ready(function() {
+                init_Home();
+              });
+		    </script>
+ <script>
+
+    var app = angular.module('myApp', []);
+    app.controller('myController', myController);
+    function myController($scope, $http) {
+        $http.get('/list-moives').then(function (result) {
+
+            $scope.movies = result.data.list_movies;
+            console.log(result.data.list_movies);
         });
-    </script>
-    <script>
-
-        var app = angular.module('myApp', []);
-        app.controller('myController', myController);
-        $scope.movies = '';
-        function myController($scope, $http) {
-            $http.get('/list-moives').then(function (result) {
-
-                $scope.movies = result.data.list_movies;
-                console.log(result.data.list_movies);
-            });
-        }
-    </script>
+    }
+</script>
 </body>
 
 </html>
